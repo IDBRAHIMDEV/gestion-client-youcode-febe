@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -33,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    AngularFireAuthModule,
     ReactiveFormsModule
   ],
   providers: [],
